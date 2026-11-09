@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Movie Recommendation App</h1>
+        <p>Search Your Favourite Movies</p>
+    </header>
+
+    <div class="search-section">
+
+        <input type="password" id="apiKey" placeholder="Enter OMDb API Key">
+
+        <input type="text" id="searchInput" placeholder="Enter Movie Name">
+
+        <button id="searchButton">Search</button>
+
+        <br><br>
+
+        <label>Genre:</label>
+
+        <select id="genre">
+            <option value="All">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+
+        <label>Minimum IMDb Rating:</label>
+
+        <select id="rating">
+            <option value="0">All Ratings</option>
+            <option value="6">6+</option>
+            <option value="7">7+</option>
+            <option value="8">8+</option>
+            <option value="9">9+</option>
+        </select>
+
+    </div>
+
+    <h2>Movie Results</h2>
+
+    <div id="movieContainer"></div>
+
+    <p id="message"></p>
+
+    <script type="module" src="app.js"></script>
+
+</body>
+</html>

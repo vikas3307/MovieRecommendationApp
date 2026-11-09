@@ -1,0 +1,9 @@
+{
+    "name": "movie-recommendation-app",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Movie Recommendation Web Application",
+    "scripts": {
+        "test": "node --test"
+    }
+}
